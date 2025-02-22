@@ -1,0 +1,63 @@
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: 'Segoe UI';     
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .head { grid-area: 5 / 8 / 7 / 12; }
+    .continue { grid-area: 7 / 8 / 9 / 12; }
+    .paragraph { grid-area: 8 / 8 / 10 / 12; }
+    
+#filename { 
+    text-align: center;
+    border: hidden;
+    border-radius: 1vh;
+    color:aliceblue;
+    background-color: gray;
+    font-size: 3vb;
+    height: 10vh;
+    width: 39.5vb;
+}
+
+#cnt {
+    color:aliceblue;
+    font-size: 3vb;
+    border: hidden;
+    border-radius: 1vh;
+    background-color: gray;
+    margin-top: 1vh;
+    height: 5vh;
+    width: 40vb;
+}
+#cnt:hover {
+    cursor: pointer;
+    animation-name: sosal;
+    background-color: rgb(99, 99, 99);
+    animation-duration: 0.5s;
+}
+#filename:hover {
+    animation-name: sosal;
+    background-color: rgb(99, 99, 99);
+    animation-duration: 0.5s;
+}
+@keyframes sosal {
+    from {
+        background-color: gray;
+    }
+    to {
+        background-color: rgb(99, 99, 99);
+    }
+} 
+#p1 {
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+body {
+    background-color: rgb(44, 44, 44);
+}
