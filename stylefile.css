@@ -58,11 +58,6 @@ button:hover {
         padding: 1.4vh;
     }
 }
-
-.main {
-    
-}
-
 #p1 {
     margin-top: 5vh;
     font-size: 4vh;
@@ -81,3 +76,8 @@ button:hover {
     padding-top: 3.5vh;
     padding-bottom: 3.5vh;
 }
+#trubka {
+    height: 3vh;
+    width: auto;
+}
+
