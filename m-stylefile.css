@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3vh; /* Adjust font size for mobile */
+    font-size: 2vh; /* Adjust font size for mobile */
     text-align: center;
 }
 
@@ -18,14 +18,14 @@ body {
 
 button {
     transition: opacity 0.5s ease-in-out;
-    font-size: 3.5vh; /* Font size for buttons */
+    font-size: 3vh; /* Font size for buttons */
     color: aliceblue;
     -webkit-text-stroke-width: 0.01vh;
     -webkit-text-stroke-color: black;
     background-color: rgb(73, 73, 73);
     border: hidden;
     border-radius: 0.2vh;
-    padding: 2vh; /* Adjust button size */
+    padding: 1.5vh; /* Adjust button size */
 }
 button:hover {
     background-color: rgb(51, 51, 51);
