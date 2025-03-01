@@ -58,4 +58,13 @@ prevButton.addEventListener('click', () => {
 window.onload = () => {
     call();
     showImage(currentIndex);
+    detectDevice(); // Call the new function to detect device type
 };
+
+function detectDevice() {
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        console.log('User is on a mobile device.');
+    } else {
+        console.log('User is on a PC.');
+    }
+}
