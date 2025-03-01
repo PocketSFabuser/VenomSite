@@ -12,12 +12,11 @@ body {
 
 .header {
     height: 3vh;
-    margin-top: 10vh;
+    margin-top: 4vh;
     font-size: 3vh; 
 }
 
 button {
-
     transition: opacity 0.5s ease-in-out;
     font-size: 2vh; 
     color: aliceblue;
