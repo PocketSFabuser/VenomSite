@@ -8,6 +8,7 @@
     
     .header { grid-area: 1 / 1 / 2 / 6; }
     .main { grid-area: 2 / 1 / 11 / 6; }
+    /*.imagescroll { grid-area: 3 / 1 / 11 / 6; }*/
 
 body {
     background: 
@@ -25,7 +26,6 @@ body {
 }
 
 .header {
-
     height: 10vh;
 }
 
@@ -64,7 +64,6 @@ button:hover {
 }
 
 #p2 {
-    margin-top: 3vh;
     font-size: 2vh;
 }
 
