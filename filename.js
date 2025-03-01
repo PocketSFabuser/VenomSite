@@ -11,14 +11,30 @@ messageDiv.style.borderRadius = "1.25vh";
 messageDiv.style.opacity = "0";
 messageDiv.style.transition = "opacity 0.5s";
 document.body.appendChild(messageDiv);
-
 const image1 = document.getElementById('img1');
 const image2 = document.getElementById('img2');
 const nextButton = document.getElementById('nextimg');
 const prevButton = document.getElementById('previmg');
+const copynum1 = document.getElementById('copynumb1');
+const copynum2 = document.getElementById('copynumb2');
+const onas = document.getElementById('onas');
 
 let currentIndex = 0;
+let autoChangePaused = false; 
 const images = [image1, image2];
+
+function copynum() {
+    copynum1.addEventListener('click', () => {
+        console.log('copied!');
+        navigator.clipboard.writeText('+375293375158');
+        showMessage();
+    });
+    copynum2.addEventListener('click', () => {
+        console.log('copied!');
+        navigator.clipboard.writeText('+375291556535');
+        showMessage();
+    });
+}
 
 function call() {
     zvonok.addEventListener('click', () => {        
@@ -56,24 +72,41 @@ function showImage(index) {
 }
 
 nextButton.addEventListener('click', () => {
+    autoChangePaused = true; 
+    setTimeout(() => {
+        autoChangePaused = false; 
+    }, 20000); 
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
 });
 
 prevButton.addEventListener('click', () => {
+    autoChangePaused = true; 
+    setTimeout(() => {
+        autoChangePaused = false; 
+    }, 20000); 
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     showImage(currentIndex);
 });
 
 window.onload = () => {
+    copynum();
+    onasFunction();
     call();
     showImage(currentIndex);
     detectDevice(); 
     setInterval(() => {
-        currentIndex = (currentIndex + 1) % images.length; 
-        showImage(currentIndex); 
-    }, 5000);
+        if (!autoChangePaused) { 
+            currentIndex = (currentIndex + 1) % images.length; 
+            showImage(currentIndex); 
+        }
+    }, 5000); 
 };
+function onasFunction() {
+    onas.addEventListener('click', () => {
+        document.getElementById('p3').scrollIntoView ({behavior: 'smooth'});
+    })
+}
 
 function detectDevice() {
     if (/Mobi|Android/i.test(navigator.userAgent)) {
