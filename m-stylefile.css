@@ -1,31 +1,81 @@
-/* Mobile styles for better display on mobile devices */
 body {
-    font-size: 14px; /* Adjust font size for mobile */
-}
-
-.container {
-    padding: 10px; /* Reduce padding for mobile */
+    background: 
+        linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.9)), 
+        url(aldi.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh; /* Adjust font size for mobile */
+    text-align: center;
 }
 
 .header {
-    text-align: center; /* Center header content */
-}
-
-.main {
-    font-size: 12px; /* Smaller font size for main content */
-}
-
-.imagescroll img {
-    width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.price img {
-    width: 100%; /* Make price image responsive */
-    height: auto; /* Maintain aspect ratio */
+    height: 10vh;
+    margin-top: 3vh;
+    font-size: 3vh; /* Font size for header */
 }
 
 button {
-    padding: 5px 10px; /* Adjust button size */
-    font-size: 12px; /* Smaller font size for buttons */
+    transition: opacity 0.5s ease-in-out;
+    font-size: 3.5vh; /* Font size for buttons */
+    color: aliceblue;
+    -webkit-text-stroke-width: 0.01vh;
+    -webkit-text-stroke-color: black;
+    background-color: rgb(73, 73, 73);
+    border: hidden;
+    border-radius: 0.2vh;
+    padding: 2vh; /* Adjust button size */
+}
+button:hover {
+    background-color: rgb(51, 51, 51);
+    padding: 2.4vh; /* Adjust hover padding */
+    cursor: pointer;
+    animation-name: button-anim;
+    animation-duration: 0.5s;
+}
+@keyframes button-anim {
+    from {
+        background-color: rgb(73, 73, 73);
+        padding: 2vh;
+    }
+    to {
+        background-color: rgb(51, 51, 51);
+        padding: 2.4vh;
+    }
+}
+#p1 {
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+#p2 {
+    font-size: 2vh;
+}
+
+.price {
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh; /* Font size for price */
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+}
+#trubka {
+    height: 3vh;
+    width: auto;
+}
+
+#img1, #img2 {
+    opacity: 1;
+    width: 40vh; /* Adjust image width for mobile */
+    height: auto;
+    margin: 0 auto;
+    display: block; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.ending {
+    text-align: center;
+    margin-top: 10vh;
+    color: rgba(184, 184, 184, 0.288);
 }
