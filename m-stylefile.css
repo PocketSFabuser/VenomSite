@@ -63,7 +63,7 @@ button:hover {
 }
 
 #img1, #img2 {
-    width: 10vh;
+    width: 100px;
     height: auto;
     margin: 0 auto;
     display: block;
