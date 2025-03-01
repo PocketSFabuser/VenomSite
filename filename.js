@@ -40,6 +40,16 @@ function showMessage() {
 }
 
 function showImage(index) {
+    const currentImage = images[currentIndex];
+    const nextImage = images[index];
+
+    currentImage.style.opacity = "0"; 
+    setTimeout(() => {
+        currentImage.style.display = 'none';
+        nextImage.style.display = 'block'; 
+        nextImage.style.opacity = "1"; 
+    }, 500); 
+    nextImage.style.opacity = "1"; 
     images.forEach((img, i) => {
         img.style.display = (i === index) ? 'block' : 'none';
     });
@@ -58,7 +68,11 @@ prevButton.addEventListener('click', () => {
 window.onload = () => {
     call();
     showImage(currentIndex);
-    detectDevice(); // Call the new function to detect device type
+    detectDevice(); 
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length; 
+        showImage(currentIndex); 
+    }, 5000);
 };
 
 function detectDevice() {
