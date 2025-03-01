@@ -1,26 +1,11 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .header { grid-area: 1 / 1 / 2 / 6; }
-    .main { grid-area: 2 / 1 / 11 / 6; }
-    /*.imagescroll { grid-area: 3 / 1 / 11 / 6; }*/
-
 body {
     background: 
         linear-gradient(rgba(1, 1, 1, 0.9), rgba(1, 1, 1, 0.9)), 
         url(aldi.webp);
-
     background-size: cover;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     color: aliceblue;
-    /*background-color: rgb(65, 65, 65);*/
     font-family: 'Courier New', Courier, monospace;
-    font-style: 'Courier New';
     font-size: 2vh;
     text-align: center;
 }
@@ -30,8 +15,6 @@ body {
 }
 
 button {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
     font-size: 3.5vh;
     color: aliceblue;
     -webkit-text-stroke-width: 0.01vh;
@@ -70,7 +53,6 @@ button:hover {
 .price {
     margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: Arial;
     font-size: 2vh;
     padding-top: 3.5vh;
     padding-bottom: 3.5vh;
@@ -80,3 +62,9 @@ button:hover {
     width: auto;
 }
 
+#img1, #img2 {
+    width: 70vh;
+    height: auto;
+    margin: 0 auto;
+    display: block; /* Ensure images are block elements for centering */
+}
