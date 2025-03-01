@@ -22,9 +22,13 @@ const images = [image1, image2];
 
 function call() {
     zvonok.addEventListener('click', () => {        
-        navigator.clipboard.writeText('+375291556535');
-        console.log('Nomer skopirovan!');
-        showMessage();
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            window.location.href = 'tel:+375291556535';
+        } else {
+            console.log('This feature is only available on mobile devices.');
+            navigator.clipboard.writeText('+375291556535');
+            showMessage();
+        }
     });
 }
 
