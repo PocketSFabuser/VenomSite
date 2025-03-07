@@ -23,7 +23,7 @@ button {
     -webkit-text-stroke-color: black;
     background-color: rgb(73, 73, 73);
     border: hidden;
-    border-radius: 0.2vh;
+    border-radius: 0.5vh;
     padding: 1vh;
 }
 button:hover {
@@ -70,7 +70,8 @@ button:hover {
     height: auto;
     margin: 0 auto;
     display: block; 
-    transition: opacity 0.5s ease-in-out; 
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 0.5vh;
 }
 
 
