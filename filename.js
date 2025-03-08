@@ -18,10 +18,17 @@ const prevButton = document.getElementById('previmg');
 const copynum1 = document.getElementById('copynumb1');
 const copynum2 = document.getElementById('copynumb2');
 const onas = document.getElementById('onas');
+const changethemetolight = document.getElementById('btn-theme');
 
 let currentIndex = 0;
 let autoChangePaused = false; 
 const images = [image1, image2];
+
+function changetheme() {
+    changethemetolight.addEventListener('click', () => {
+        window.open('light-main.html', '_self');
+    });
+}
 
 function copynum() {
     copynum1.addEventListener('click', () => {
@@ -90,6 +97,7 @@ prevButton.addEventListener('click', () => {
 });
 
 window.onload = () => {
+    changetheme();
     copynum();
     onasFunction();
     call();

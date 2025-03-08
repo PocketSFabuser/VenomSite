@@ -11,8 +11,16 @@ body {
 }
 
 .header {
-    height: 10vh;
+    height: 5vh;
     margin-top: 3vh;
+}
+
+#btn-theme {
+    margin-top: 3vh;
+}
+#img3 {
+    width: 7vh;
+    height: 7vh;
 }
 
 button {
@@ -21,10 +29,11 @@ button {
     color: aliceblue;
     -webkit-text-stroke-width: 0.01vh;
     -webkit-text-stroke-color: black;
-    background-color: rgb(73, 73, 73);
+    background-color: rgba(73, 73, 73, 0.295);
     border: hidden;
     border-radius: 0.5vh;
     padding: 1vh;
+    margin: 0; 
 }
 button:hover {
     background-color: rgb(51, 51, 51);
@@ -64,22 +73,52 @@ button:hover {
     width: auto;
 }
 
+.imagescroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        margin-left: 1vh;
+        margin-right: 1vh;
+        width: 4vh;
+        height: 5vh;
+        font-size: 2.5vh;
+        padding: 1vh;
+    } button:hover {
+        padding: 1vh;
+        animation-name: sosal;
+        animation-duration: 0.5s;
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+    }
+}
+@keyframes sosal {
+    from {
+        padding-left: 1vh;
+        padding-right: 1vh;
+    } to {
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+    }
+}
+
 #img1, #img2 {
     opacity: 1;
     width: 70vh;
     height: auto;
-    margin: 0 auto;
     display: block; 
     transition: opacity 0.5s ease-in-out;
     border-radius: 0.5vh;
 }
-
-
+#p3 {
+    color: rgba(240, 248, 255, 0.253);
+}
 .ending {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
     color: rgba(184, 184, 184, 0.288);
     button {
+        margin-top: 1vh;
         background-color: rgba(184, 184, 184, 0.075);
         color: rgba(184, 184, 184, 0.288)
     }
