@@ -1,0 +1,140 @@
+body {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.103), rgba(173, 173, 173, 0.199)), 
+        url(aldi.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vh;
+    text-align: center;
+}
+.container {
+    color: black;
+}
+.header {
+    height: 5vh;
+    margin-top: 3vh;
+}
+
+#btn-theme {
+    margin-top: 3vh;
+}
+#img3 {
+    width: 7vh;
+    height: 7vh;
+}
+
+button {
+    transition: opacity 0.5s ease-in-out;
+    font-size: 3.5vh;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.01vh;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    background-color: rgba(73, 73, 73, 0.295);
+    border: hidden;
+    border-radius: 0.5vh;
+    padding: 1vh;
+    margin: 0; 
+    transform: scale('1');
+}
+button:hover {
+    background-color: rgba(73, 73, 73, 0.212);
+    padding: 1.4vh;
+    cursor: pointer;
+    animation-name: button-anim;
+    animation-duration: 0.5s;
+}
+@keyframes button-anim {
+    from {
+        background-color: rgba(73, 73, 73, 0.274);
+        transform: scale('1');
+    } 
+    50% {
+        transform: scale('1.5');
+    }
+    to {
+        background-color: rgba(73, 73, 73, 0.219);
+        transform: scale('2');
+    }
+}
+#p1 {
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+#p2 {
+    font-size: 2vh;
+}
+
+#p6 {
+    font-size: 2vh;
+    color: black;
+}
+
+.price {
+    margin-top: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    padding-top: 3.5vh;
+    padding-bottom: 3.5vh;
+}
+#trubka {
+    height: 3vh;
+    width: auto;
+}
+
+.imagescroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        margin-left: 1vh;
+        margin-right: 1vh;
+        width: 4vh;
+        height: 5vh;
+        font-size: 2.5vh;
+        padding: 1vh;
+    } button:hover {
+        padding: 1vh;
+        animation-name: sosal;
+        animation-duration: 0.5s;
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+    }
+}
+@keyframes sosal {
+    from {
+        padding-left: 1vh;
+        padding-right: 1vh;
+    } to {
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+    }
+}
+
+#img1, #img2 {
+    opacity: 1;
+    width: 70vh;
+    height: auto;
+    display: block; 
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 0.5vh;
+}
+#p3 {
+    color: rgb(0, 0, 0);
+}
+.ending {
+    text-align: center;
+    margin-top: 5vh;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke-color: aliceblue;
+    -webkit-text-stroke-width: 0vh;
+    button {
+        -webkit-text-stroke-color: aliceblue;
+        -webkit-text-stroke-width: 0vh;
+        margin-top: 1vh;
+        background-color: rgba(184, 184, 184, 0.075);
+        color: rgb(0, 0, 0)
+    }
+}

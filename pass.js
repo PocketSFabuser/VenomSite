@@ -1,7 +1,7 @@
 if (window.matchMedia("(max-width: 750px)").matches) {
-    // Load mobile style
+    // load mobile styles
     document.write('<link rel="stylesheet" type="text/css" href="m-stylefile.css">');
 } else {
-    // Load pc style
+    // load pc styles
     document.write('<link rel="stylesheet" type="text/css" href="stylefile.css">');
 }
