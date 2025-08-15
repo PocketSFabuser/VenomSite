@@ -255,4 +255,88 @@
         } #copy-phone:hover {
             transform: scale(1.1);
         }
-        
+        /* Добавьте это в конец вашего style-pc.css */
+
+@media (max-width: 480px) {
+    body {
+        padding: 1vh;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 3.5vh;
+        margin-top: 2vh;
+    }
+
+    .subtitle {
+        font-size: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .slider-container {
+        height: 50vh; /* Увеличим высоту для лучшего отображения */
+        max-width: 95%;
+        margin-bottom: 2vh;
+    }
+
+    .slide-content {
+        padding: 2vh 1.5vh;
+    }
+
+    .slide-title {
+        font-size: 2.2vh;
+        margin-bottom: 0.5vh;
+    }
+
+    .slide-description {
+        font-size: 1.6vh;
+        line-height: 1.4;
+    }
+
+    .slider-btn {
+        width: 4.5vh;
+        height: 4.5vh;
+    }
+
+    .slider-btn svg {
+        width: 2.2vh;
+        height: 2.2vh;
+    }
+
+    .dots {
+        margin-top: 1vh;
+    }
+
+    #form, #copy-phone {
+        width: 16vh;
+        height: 5vh;
+        font-size: 1.6vh;
+    }
+
+    #tg-icon {
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 3vh;
+    }
+    
+    .subtitle {
+        font-size: 1.8vh;
+    }
+    
+    .slider-container {
+        height: 45vh;
+    }
+    
+    .slide-title {
+        font-size: 2vh;
+    }
+    
+    .slide-description {
+        font-size: 1.5vh;
+    }
+}
