@@ -4,7 +4,7 @@ window.onload = () => {
 
     tg_btn.addEventListener('click', () => {
         setTimeout(()=> {
-            open('t.me/QuestsBar_bot', '_blank');
+            open('https://www.t.me/QuestsBar_bot', '_blank');
         }, 1000);
         showNotification({
 						title: 'Перенаправляем...',
